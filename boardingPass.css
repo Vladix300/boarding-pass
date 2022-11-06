@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.moon {
+  font-size: 2.2rem;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.moon:hover {
+  cursor: pointer;
+}
+
+#moonNight {
+  display: none;
+}
+
+#alertMsgContainer {
+  background-color: #d91e50;
+  position: absolute;
+  top: -100px;
+  width: 40%;
+  font-family: 'Krona One', sans-serif;
+  font-size: 1.6rem;
+}
+
+#alertMsgContainer > p {
+  margin: 0;
+  text-align: center;
+}
+
+#forma {
+  font-family: 'Krona One';
+  position: absolute;
+  bottom: 60px;
+  left: -1000px;
+  transition: left 1.5s;
+}
+
+.formDisappear {
+  
+  animation: formDisappearAnim 1.5s ease-in forwards;
+  
+}
+
+@keyframes formDisappearAnim {
+  0% {left: 300px; }
+  15% {left: 320px; }
+  100% {left: -1000px; }
+}
+
+
+
+.alertMsgAnim {
+  animation: boardedMsg 10s linear;
+}
+
+@keyframes boardedMsg {
+  0% { top: -100px; }
+  20% { top: 0px; }
+  90% { top: 0px; }
+  100% { top: -100px; }
+}
+
+
+#boardingPass {
+
+  
+  background-color: #d91e50;
+  color: white;
+  font-family: 'Krona One', sans-serif;
+  font-size: 2rem;
+  
+  position: absolute;
+  left: 300px;
+  top: 80px;
+ 
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 16px;
+}
+
+#bpass {
+  margin-left: 30px;
+}
+
+#qrCode {
+  background-color: white;
+  color: black;
+  width: 70px;
+  position: absolute;
+  font-size: 4.5rem;
+  margin-top: 160px;
+}
+
+#qrCode:hover {
+  color: black;
+  transition: color 0.6s;
+}
+
+#boardingPass > p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+#flights {
+  margin-left: 30px;
+  margin-top: 50px;
+/*   display: flex;
+  gap: 35px;
+  flex-direction: column; */
+}
+
+#flights > p {
+  font-size: 1.2rem;
+  
+}
+
+table {
+  border: 1px solid black;
+  font-size: 0.9rem;
+  
+  margin-bottom: 100px;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#pax {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+#flights > #indices {
+  display: flex;  
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+
+#indices span {
+  margin-right: 35px;
+}
+
+#indices > #carrier {
+  margin-right: 60px;
+}
+
+#depTime, #gate, #seat {
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+
+#departDate {
+  font-size: 0.8rem;
+}
+
+#seat {
+  margin-left: 28px;
+}
+
+#boarding {
+  /* margin-top: 80px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  border: 1px solid black;
+
+  transition: color 0.6s;
+}
+
+#planeIcon {
+  margin-right: 10px;
+}
+
+/* #boardedSpan {
+  font-size: 1.4rem;
+  display: none;
+} */
+
+#unboardSpan {
+  color: black;
+  font-size: 1rem;
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+
+#unboardSpan:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.6s;
+}
+
+.boardingHover:hover {
+  transition: color 0.6s;
+  color: black;
+  cursor: pointer;
+}
+
+#logo {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  width: 180px;
+}
+
+
+.boardingHoverAF:hover {
+  color: red;
+}
+
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+form > input {
+   width: 177px;
+}
+
+.formInp {
+  display: block;
+}
+
+select {
+  width: 180px;
+}
+
+#bolt {
+  z-index: 2;
+  font-size: 30px;
+  position: absolute; 
+  bottom: 100px;
+  left: 20px;
+}
+
+#bolt:hover {
+  transform: rotate(10deg);
+  cursor: pointer;
+}
+
+#nameInpContainer {
+  margin-top: 20px;
+}
+
+#paxNameInp {
+  font-size: 20px;
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#nameWarningP {
+  margin-top: 10px;
+  visibility: hidden;
+  background-color: red;
+  color: white;
+}

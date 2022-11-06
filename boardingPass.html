@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Digital Boarding Pass</title>
+
+    <script defer src="https://kit.fontawesome.com/f1a2043437.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="boardingPass.css" /> 
+</head>
+
+<body>
+    
+
+    <div> 
+    <i id='moonDay' class="fa-regular fa-moon moon "></i>
+    <i id='moonNight' class="fa-solid fa-moon moon"></i>
+
+    </div>
+
+
+    <div id='alertMsgContainer'>  
+    
+    <p> You are now boarded ! </p>
+    
+    </div>
+
+
+    <div id='boardingPass'> 
+    
+    <span id='bpass'> BOARDING PASS </span>
+    
+    <!--   <div id='qrCode'>
+    <i class="fa-solid fa-qrcode"></i>
+    </div> -->
+    
+    <!--   <p style='visibility:hidden'> NORWEGIAN </p> -->
+    
+    <div id='flights'>
+        
+        <p>
+        
+        PASSENGER : <span id='pax'> VDOVYCHENKO VLADYSLAV </span>
+        </p>
+        
+    <table style="width:100%">
+        
+        <tr>
+            <td>
+                Carrier : 
+            </td>
+        
+        <td id='carrier'>
+            NORWEGIAN
+        </td>
+            <td>
+                Date: 
+            </td>
+            <td>
+                Departure Time : 
+            </td>
+            <td>
+                Gate :
+            </td>
+        
+            <td>
+                Seat :
+            </td>
+        
+        </tr>
+        
+        <tr>
+        
+        <td colspan='2'>
+            <i id='airplane' class="fa-solid fa-plane"></i>
+        <span id='arr'> PARIS CDG </span> - 
+    <span id='dest'> OSLO GARDERMOEN </span>
+        </td>
+        
+        <td id='departDate'>
+            
+        </td>
+        
+        <td id='depTime'>
+            12:30
+        </td> 
+        <td id='gate'>
+            D51
+        </td>       
+        <td id='seat'>
+            24A
+        </td>
+        
+        
+        </tr>
+        
+        
+        </table>
+        
+    
+    </div> 
+    <!--  // flights  -->
+    
+    
+    
+    <div id='boarding' class='boardingHover'>
+    
+    <i id='planeIcon' class="fa-solid fa-plane-departure"></i>
+    <span id='boardSpan'> BOARD </span>
+        
+
+    </div>
+    
+    <span id='unboardSpan'> UNBOARD </span>     
+    
+    
+    <div>
+        
+        <img src='https://aviokase.lv/userfiles/7ab28a8dbd7b2a03d1078269ca15e9a6.png' id='logo'/>
+        
+    </div>
+    
+    </div> 
+     <!-- boardingPass  -->
+
+
+
+
+    <i class="fa-sharp fa-solid fa-bolt" id='bolt'></i>
+
+
+    <div id='forma'> 
+        
+    
+        <form id='form'>
+            
+            
+            <fieldset>
+            
+            <legend> YOUR TRIP </legend> 
+            <label for='deptInp'> FROM </label>
+            <input type='text' id='deptInp' />
+            
+            <label for='destInp'> TO </label> 
+            <input type='text' id='destInp'/>
+            
+            <label for='depDateInp'> DATE </label> 
+            <input type='date' id='depDateInp'/>
+            
+            <label for='airlinesSelect'> WITH </label>
+                
+            <select id='airlinesSelect'>
+            
+            <option value='' selected disabled> AIRLINE </option>
+            <option value='Air France'> AIR FRANCE </option>
+            <option value='LOT POLISH AIRLINES'> LOT POLISH AIRLINES</option>
+            <option value='Icelandair'> ICELANDAIR </option> 
+            <option value='SAS Scandinavian'> SAS SCANDINAVIAN</option> 
+            <option value='Norwegian'> NORWEGIAN </option> 
+            <option value='PLAY'> PLAY </option> 
+            
+            </select>
+            
+            </fieldset> 
+            
+            
+            
+        </form>
+        
+        
+        <div>
+            
+            GATE : <input id='gateInp' type='text'/>
+            SEAT : <input id='seatInp' type="text"/>
+            
+        </div>
+        
+        <div id='nameInpContainer'>
+            
+            <span> YOUR NAME : </span>
+            <input type='text' id='paxNameInp'/>
+            
+            <p id='nameWarningP'> Please enter a valid name </p> 
+            
+            
+        </div>
+    
+    </div>
+
+
+</body>
+
+
+<script defer src="boardingPass.js"></script>>
+
+
+</html>
